@@ -7,7 +7,6 @@ DROP TABLE IF EXISTS Rounds;
 DROP TABLE IF EXISTS CompanyRounds;
 DROP TABLE IF EXISTS Stakeholders;
 DROP TABLE IF EXISTS People;
-DROP TABLE IF EXISTS Employees;
 DROP TABLE IF EXISTS CompanyEmployees;
 
 CREATE TABLE Companies(
@@ -92,12 +91,6 @@ CREATE TABLE People(
     last_name VARCHAR(500),
     employee_flag BOOLEAN,
     investor_flag BOOLEAN
-);
-
-CREATE TABLE Employees(
-    permalink VARCHAR(500) PRIMARY KEY,
-    first_name VARCHAR(500),
-    last_name VARCHAR(500)
 );
 
 CREATE TABLE CompanyEmployees(
